@@ -13,9 +13,8 @@ public class Host
     {
         Services = new Service();
         Controllers = new List<Type>();
-
-        //var ControllersNameSpace = Assembly.GetExecutingAssembly().FullName.Split(".").ToList();
         var type = typeof(Host);
+
         string ControllersNameSpace = type.Namespace + ".Controllers";
 
         foreach (Type item in Assembly.GetExecutingAssembly().GetTypes())
