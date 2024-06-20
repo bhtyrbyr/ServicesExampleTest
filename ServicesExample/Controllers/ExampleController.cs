@@ -9,8 +9,14 @@ namespace ServicesExample.Controllers
 
         [Method("Get")]
         public bool Get() { return true; }
-        public void Post() { } 
+
+        [Method("Post")]
+        public void Post() { }
+
+        [Method("Put")]
         public void Put() { }
+
+        [Method("Delete")]
         public void Delete() { }
     }
 }
